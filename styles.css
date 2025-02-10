@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1e3a5f; /* Темно-синий фон */
+    color: white;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container {
+    background: #2c3e50; /* Темный контейнер */
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#timer {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.controls button {
+    background: #3498db; /* Голубой */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.controls button:hover {
+    background: #2980b9;
+}
+
+#cycles {
+    margin-top: 10px;
+}
+
+/* Изменение цвета фона при смене режима */
+body.work-mode {
+    background: #8e44ad; /* Фиолетовый - рабочий режим */
+}
+
+body.break-mode {
+    background: #2ecc71; /* Зелёный - перерыв */
+}
